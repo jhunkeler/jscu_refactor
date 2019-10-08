@@ -1,4 +1,5 @@
 // src/JobConfig.groovy
+package edu.stsci.jscu
 
 class JobConfig implements Serializable {
 

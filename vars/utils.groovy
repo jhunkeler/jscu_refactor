@@ -1,5 +1,5 @@
 // Jenkinsfile support utilities
-import BuildConfig
+import edu.stsci.jscu
 import groovy.io.FileType
 import groovy.json.JsonOutput
 import org.apache.commons.lang3.SerializationUtils

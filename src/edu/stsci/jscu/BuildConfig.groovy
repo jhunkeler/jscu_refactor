@@ -1,4 +1,5 @@
 // src/BuildConfig.groovy
+package edu.stsci.jscu
 
 class BuildConfig implements Serializable {
     def nodetype = ""

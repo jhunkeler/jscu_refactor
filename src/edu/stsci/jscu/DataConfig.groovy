@@ -1,5 +1,9 @@
+package edu.stsci.jscu
+
 import groovy.json.JsonOutput
 import org.apache.commons.io.FileUtils
+import com.cloudbees.groovy.cps.NonCPS
+
 
 class DataConfig implements Serializable {
     String root = '.'
@@ -20,10 +24,12 @@ class DataConfig implements Serializable {
         //}
     }
 
+    @NonCPS
     def isUpload() {
         return this.direction.startsWith('u')
     }
 
+    @NonCPS
     def isDownload() {
         return this.direction.startswith('d')
     }
