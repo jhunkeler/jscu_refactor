@@ -1,11 +1,11 @@
-import utils.edu.stsci.jscu
+@Library('utils') _
 
 // [skip ci] and [ci skip] have no effect here.
 if (utils.scm_checkout(['skip_disable':true])) return
 
 // Allow modification of the job configuration, affects all relevant build configs.
 // Pass this object in the argument list to the`run()` function below to apply these settings to the job's execution.
-jobconfig = new utils.JobConfig()
+jobconfig = new JobConfig()
 //jobconfig.post_test_summary = true
 //jobconfig.credentials = ['SECRET_VALUE']
 //jobconfig.enable_env_publication = true
