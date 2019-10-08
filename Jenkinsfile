@@ -1,3 +1,5 @@
+import utils.edu.stsci.jscu
+
 // [skip ci] and [ci skip] have no effect here.
 if (utils.scm_checkout(['skip_disable':true])) return
 
